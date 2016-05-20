@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.blogspot.smallshipsinvest.coolcard.TemplatesActivity"
     android:orientation="vertical"
-    android:background="@color/colorBlack">
+    android:background="@color/colorPostalBlue">
 
     <ListView
         android:id="@+id/tempList"

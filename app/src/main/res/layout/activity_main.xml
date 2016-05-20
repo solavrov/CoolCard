@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.blogspot.smallshipsinvest.coolcard.MainActivity"
-    android:background="@color/colorBlack">
+    android:background="@color/colorPostalBlue">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/enter_code"
-        android:textSize="@dimen/small_text"/>
+        android:textSize="@dimen/small_text"
+        android:textColor="@color/colorWhite"/>
 
     <EditText
         android:id="@+id/code"
@@ -58,7 +59,8 @@
         android:inputType="textVisiblePassword"
         android:maxLength="10"
         android:padding="@dimen/large_separation"
-        android:textSize="@dimen/normal_text"/>
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/colorPostalRed"/>
 
     <Button
         android:layout_width="wrap_content"

@@ -11,7 +11,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.blogspot.smallshipsinvest.coolcard.CreateActivity"
-    android:background="@color/colorBlack">
+    android:background="@color/colorPostalBlue">
 
 
     <!--code-->

@@ -3,7 +3,8 @@
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:padding="@dimen/large_separation">
+              android:padding="@dimen/large_separation"
+              android:background="@color/colorPostalBlueDark">
 
     <ImageView
         android:id="@+id/itemImage"
@@ -16,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="@dimen/normal_text"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="@color/colorWhite"/>
 
 </LinearLayout>
