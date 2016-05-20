@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">CoolCard</string>
+
+    <!--interface-->
+    <string name="enter_code">Enter a code:</string>
+    <string name="view">View</string>
+    <string name="create">Create</string>
+    <string name="gen_code">Code</string>
+    <string name="preview">Preview</string>
+    <string name="send">Send</string>
+    <string name="greeting_hint">Put your greeting here. Use long press to start</string>
+    <string name="font_size">Font:</string>
+    <string name="melody">Melody:</string>
+
+    <!--messages-->
+    <string name="forgot_greeting">You forgot to write a greeting…</string>
+    <string name="wait">Connecting…</string>
+    <string name="update">Please update the App to view this card…</string>
+    <string name="incorrect">Incorrect code</string>
+    <string name="enter_code_message">Please enter a code</string>
+    <string name="received">"You received a greeting card! The card's code: "</string>
+    <string name="download">"To view, download an app for Android: "</string>
+
+    <!--card names-->
+    <string name="space">Space</string>
+    <string name="love">Love</string>
+    <string name="sail">Sail</string>
+    <string name="flowers">Flowers</string>
+    <string name="firework">Firework</string>
+
+    <!--spinners-->
+    <string-array name="font_sizes">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>Happy birthday</item>
+        <item>Happy birthday 2</item>
+        <item>Triumph</item>
+        <item>Romantic</item>
+        <item>Sunrise</item>
+        <item>Star wars</item>
+        <item>Positive</item>
+    </string-array>
+
+</resources>

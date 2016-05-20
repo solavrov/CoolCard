@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">CoolCard</string>
+
+    <!--interface-->
+    <string name="enter_code">Введите код:</string>
+    <string name="view">Смотреть</string>
+    <string name="create">Создать</string>
+    <string name="gen_code">Код</string>
+    <string name="preview">Смотреть</string>
+    <string name="send">Послать</string>
+    <string name="greeting_hint">Напишите здесь ваше поздравление. Используйте долгое нажатие, чтобы
+        начать</string>
+    <string name="font_size">Шрифт:</string>
+    <string name="melody">Мелодия:</string>
+
+    <!--messages-->
+    <string name="forgot_greeting">Вы забыли написать поздравление…</string>
+    <string name="wait">Соединение…</string>
+    <string name="update">Пожалуйста обновите приложение для просмотра этой окрытки…</string>
+    <string name="incorrect">Неверный код</string>
+    <string name="enter_code_message">Пожалуйста введите код</string>
+    <string name="received">"Вы получили открытку! Код открытки: "</string>
+    <string name="download">"Чтобы посмотреть, загрузите приложение для Андроида: "</string>
+
+    <!--card names-->
+    <string name="space">Космос</string>
+    <string name="love">Любовь</string>
+    <string name="sail">Парус</string>
+    <string name="flowers">Цветы</string>
+    <string name="firework">Салют</string>
+
+    <!--spinners-->
+    <string-array name="font_sizes">
+        <item>Мелкий</item>
+        <item>Средний</item>
+        <item>Крупный</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>С Днем рождения</item>
+        <item>С Днем рождения 2</item>
+        <item>Триумф</item>
+        <item>Романтика</item>
+        <item>Восход</item>
+        <item>Звездные войны</item>
+        <item>Позитивная</item>
+    </string-array>
+
+</resources>

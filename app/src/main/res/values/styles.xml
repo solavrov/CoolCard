@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="AppTheme"
+           parent="Theme.AppCompat.NoActionBar">
+
+        <item name="colorAccent">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="colorPrimary">@color/primary_dark_material_dark</item>
+        <item name="android:colorBackground">@color/abc_search_url_text_pressed</item>
+
+    </style>
+
+</resources>

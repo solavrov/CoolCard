@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">18dp</dimen>
+
+    <dimen name="large_text">34dp</dimen>
+    <dimen name="normal_text">28dp</dimen>
+    <dimen name="small_text">25dp</dimen>
+
+    <dimen name="large_separation">6dp</dimen>
+    <dimen name="small_separation">2dp</dimen>
+    <dimen name="greeting_padding">11dp</dimen>
+
+    <dimen name="listview_image_size">80dp</dimen>
+
+    <dimen name="icon_size">52dp</dimen>
+    <dimen name="code_view_length">262dp</dimen>
+
+    <dimen name="background_radius">11dp</dimen>
+
+</resources>

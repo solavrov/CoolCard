@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--general-->
+    <color name="colorLightBackground">#282828</color>
+    <color name="colorDarkText">#5e5e5e</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <!--cards-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightBlue">#b9baf0</color>
+    <color name="colorSky">#BFEFFF</color>
+    <color name="colorDarkWater">#006994</color>
+    <color name="colorLeafGreen">#3A5F0B</color>
+
+
+</resources>

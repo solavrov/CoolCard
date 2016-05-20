@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/createRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.blogspot.smallshipsinvest.coolcard.CreateActivity"
+    android:background="@color/colorBlack">
+
+
+    <!--code-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_separation"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal"
+        android:padding="@dimen/large_separation">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/small_separation"/>
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="@dimen/small_text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generateCode"
+            android:text="@string/gen_code"
+            android:textSize="@dimen/normal_text"/>
+
+    </LinearLayout>
+
+    <!--font size-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_separation">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/font_size"
+            android:textSize="@dimen/small_text"/>
+
+        <Spinner
+            android:id="@+id/fontSizeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!--melody-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_separation">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/melody"
+            android:textSize="@dimen/small_text"/>
+
+        <Spinner
+            android:id="@+id/musicSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!--greeting-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/large_separation"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/greetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:gravity="top"
+            android:hint="@string/greeting_hint"
+            android:longClickable="true"
+            android:padding="@dimen/greeting_padding"
+            android:textSize="@dimen/small_text"/>
+
+    </ScrollView>
+
+    <!--buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="runViewFromCreate"
+            android:text="@string/preview"
+            android:textSize="@dimen/normal_text"/>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="runSend"
+            android:text="@string/send"
+            android:textSize="@dimen/normal_text"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
