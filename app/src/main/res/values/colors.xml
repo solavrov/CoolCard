@@ -7,7 +7,7 @@
     <color name="colorRed">#ff0000</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorPostalBlue">#0084cc</color>
-    <color name="colorPostalBlueDark">#0073b2</color>
+    <color name="colorPostalBlueDark">#0084cc</color>
     <color name="colorPostalRed">#ff535e</color>
 
     <!--cards-->
