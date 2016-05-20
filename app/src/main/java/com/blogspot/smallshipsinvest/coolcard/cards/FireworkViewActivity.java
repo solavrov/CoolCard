@@ -17,7 +17,7 @@ import com.blogspot.smallshipsinvest.coolcard.helpers.XY;
 public class FireworkViewActivity extends AppCompatActivity {
 
 
-    private static final int X_NUM_OF_FIREWORKS = 3;
+    private static final int X_NUM_OF_FIREWORKS = 5;
     private static final int NUM_OF_BALLS = 9;
     private static final double FIREWORK_RADIUS = 0.3d;
     private static final float BALL_SIZE = 0.01f;
