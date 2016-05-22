@@ -68,7 +68,10 @@
         android:layout_gravity="center"
         android:onClick="runViewFromMain"
         android:text="@string/view"
-        android:textSize="@dimen/normal_text"/>
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/colorPostalBlue"
+        android:background="@drawable/new_button"
+        android:layout_margin="@dimen/large_separation"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -85,7 +88,10 @@
             android:layout_height="wrap_content"
             android:onClick="runTemplatesFromMain"
             android:text="@string/create"
-            android:textSize="@dimen/normal_text"/>
+            android:textSize="@dimen/normal_text"
+            android:textColor="@color/colorPostalBlue"
+            android:background="@drawable/new_button"
+            android:layout_margin="@dimen/large_separation"/>
 
         <TextView
             android:layout_width="0dp"
