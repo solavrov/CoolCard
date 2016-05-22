@@ -3,16 +3,9 @@
     <style name="AppTheme"
            parent="Theme.AppCompat.NoActionBar">
 
-        <item name="colorAccent">@color/colorWhite</item>
-        <item name="colorPrimary">@color/colorPostalBlue</item>
-        <item name="android:colorBackground">@color/colorPostalBlue</item>
-        <item name="android:windowBackground">@color/colorPostalBlue</item>
-        <item name="android:textColorPrimary">@color/colorWhite</item>
-        <item name="android:textColorPrimaryInverse">@color/colorBlack</item>
-        <item name="android:textColorSecondary">@color/colorWhite</item>
-        <item name="android:textColorSecondaryInverse">@color/colorBlack</item>
-        <item name="colorPrimaryDark">@color/colorBlack</item>
-        <item name="android:colorForeground">@color/colorWhite</item>
+        <item name="colorAccent">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="colorPrimary">@color/primary_dark_material_dark</item>
+        <item name="android:colorBackground">@color/abc_search_url_text_pressed</item>
 
     </style>
 
