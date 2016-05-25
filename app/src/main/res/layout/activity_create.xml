@@ -38,15 +38,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="@dimen/small_text"
             android:textColor="@color/colorPostalRed"/>
 
-        <Button
+        <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonBlue
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:onClick="generateCode"
             android:text="@string/gen_code"
-            android:textSize="@dimen/normal_text"/>
+            android:textSize="@dimen/normal_text"
+            android:layout_margin="@dimen/large_separation"/>
 
     </LinearLayout>
 
@@ -61,7 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/font_size"
-            android:textSize="@dimen/small_text"/>
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/colorWhite"/>
 
         <Spinner
             android:id="@+id/fontSizeSpinner"
@@ -82,7 +86,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/melody"
-            android:textSize="@dimen/small_text"/>
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/colorWhite"/>
 
         <Spinner
             android:id="@+id/musicSpinner"
@@ -107,10 +112,11 @@
             android:background="@drawable/rounded_background"
             android:gravity="top"
             android:hint="@string/greeting_hint"
+            android:textColorHint="@color/colorPostalBlue"
             android:longClickable="true"
             android:padding="@dimen/greeting_padding"
             android:textSize="@dimen/small_text"
-            android:textColor="@color/colorPostalRed"/>
+            android:textColor="@color/colorPostalBlue"/>
 
     </ScrollView>
 
@@ -121,23 +127,25 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
+        <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
             android:id="@+id/viewButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="runViewFromCreate"
             android:text="@string/preview"
-            android:textSize="@dimen/normal_text"/>
+            android:textSize="@dimen/normal_text"
+            android:layout_margin="@dimen/large_separation"/>
 
-        <Button
+        <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="runSend"
             android:text="@string/send"
-            android:textSize="@dimen/normal_text"/>
+            android:textSize="@dimen/normal_text"
+            android:layout_margin="@dimen/large_separation"/>
 
     </LinearLayout>
 

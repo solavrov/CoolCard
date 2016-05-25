@@ -6,4 +6,5 @@
           android:ellipsize="marquee"
           android:singleLine="true"
           android:textSize="@dimen/small_text"
-          android:gravity="center"/>
+          android:gravity="center"
+          android:background="@color/colorPostalBlue"/>

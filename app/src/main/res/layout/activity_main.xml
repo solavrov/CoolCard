@@ -62,15 +62,13 @@
         android:textSize="@dimen/normal_text"
         android:textColor="@color/colorPostalRed"/>
 
-    <Button
+    <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="runViewFromMain"
         android:text="@string/view"
         android:textSize="@dimen/normal_text"
-        android:textColor="@color/colorPostalBlue"
-        android:background="@drawable/new_button"
         android:layout_margin="@dimen/large_separation"/>
 
     <TextView
@@ -83,14 +81,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="runTemplatesFromMain"
             android:text="@string/create"
             android:textSize="@dimen/normal_text"
-            android:textColor="@color/colorPostalBlue"
-            android:background="@drawable/new_button"
             android:layout_margin="@dimen/large_separation"/>
 
         <TextView
@@ -102,8 +98,9 @@
             android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="@dimen/small_text"/>
+            android:layout_gravity="bottom|right"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/colorWhite"/>
 
     </LinearLayout>
 
