@@ -4,11 +4,12 @@ import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.blogspot.smallshipsinvest.coolcard.R;
 
-public class MyButtonBlue extends TextView {
+public class MyButtonBlue extends Button {
 
     public int shadow;
 
