@@ -64,17 +64,15 @@
         android:textSize="@dimen/large_text"
         android:textColor="@color/colorPostalRed"/>
 
-
-    <!--android:inputType="textVisiblePassword"-->
-
-    <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="runViewFromMain"
         android:text="@string/view"
         android:textSize="@dimen/normal_text"
-        android:layout_margin="@dimen/large_separation"/>
+        android:layout_margin="@dimen/large_separation"
+        android:background="@drawable/my_button_white"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -86,13 +84,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="runTemplatesFromMain"
             android:text="@string/create"
             android:textSize="@dimen/normal_text"
-            android:layout_margin="@dimen/large_separation"/>
+            android:layout_margin="@dimen/large_separation"
+            android:background="@drawable/my_button_white"/>
 
         <TextView
             android:layout_width="0dp"
