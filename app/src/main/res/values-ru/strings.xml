@@ -4,15 +4,17 @@
 
     <!--interface-->
     <string name="enter_code">Введите код:</string>
+    <string name="greeting_hint">Напишите здесь ваше поздравление. Используйте долгое нажатие, чтобы
+        начать</string>
+    <string name="font_size">Шрифт:</string>
+    <string name="melody">Мелодия:</string>
+
+    <!--buttons-->
     <string name="view">Смотреть</string>
     <string name="create">Создать</string>
     <string name="gen_code">Код</string>
     <string name="preview">Смотреть</string>
     <string name="send">Послать</string>
-    <string name="greeting_hint">Напишите здесь ваше поздравление. Используйте долгое нажатие, чтобы
-        начать</string>
-    <string name="font_size">Шрифт:</string>
-    <string name="melody">Мелодия:</string>
 
     <!--messages-->
     <string name="forgot_greeting">Вы забыли написать поздравление…</string>

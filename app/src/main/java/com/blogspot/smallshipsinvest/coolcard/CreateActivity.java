@@ -1,6 +1,7 @@
 package com.blogspot.smallshipsinvest.coolcard;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -42,6 +43,7 @@ public class CreateActivity extends AppCompatActivity {
 
         setIcon((ImageView) findViewById(R.id.icon));
 
+        codeView.setTypeface(Typeface.createFromAsset(getAssets(), Data.CODE_FONT));
         codeView.setText(Data.cardCreate.code);
 
         greetingView.setOnLongClickListener(new View.OnLongClickListener() {

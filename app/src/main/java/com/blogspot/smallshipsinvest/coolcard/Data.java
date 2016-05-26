@@ -2,6 +2,9 @@ package com.blogspot.smallshipsinvest.coolcard;
 
 public class Data {
 
+//    some global constants
+    public final static String CODE_FONT = "SegoeMarker.ttf";
+
 //    paths
     public static final String APP_LINK = "https://play.google.com/store/apps/details?id=com.blogspot" +
         ".smallshipsinvest.coolcard";

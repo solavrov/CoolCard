@@ -3,6 +3,7 @@ package com.blogspot.smallshipsinvest.coolcard;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -26,7 +27,6 @@ import com.firebase.client.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-
     public final static long SHORT_FADING_TIME = 2_500;
     public final static long LONG_FADING_TIME = 6_000;
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         setVersion();
         TextView versionView = (TextView) findViewById(R.id.version);
         assert versionView != null;
+        versionView.setTypeface(Typeface.createFromAsset(getAssets(), Data.CODE_FONT));
         versionView.setText("v" + Data.appVersionName);
 
         Firebase.setAndroidContext(this);
@@ -54,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         cloud = new Firebase(Data.FIREBASE);
         messageView = (TextView) findViewById(R.id.message);
         codeView = (EditText) findViewById(R.id.code);
+        assert codeView != null;
+        codeView.setTypeface(Typeface.createFromAsset(getAssets(), Data.CODE_FONT));
         codeView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {

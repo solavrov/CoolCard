@@ -4,14 +4,16 @@
 
     <!--interface-->
     <string name="enter_code">Enter a code:</string>
+    <string name="greeting_hint">Put your greeting here. Use long press to start</string>
+    <string name="font_size">Font:</string>
+    <string name="melody">Melody:</string>
+
+    <!--buttons-->
     <string name="view">View</string>
     <string name="create">Create</string>
     <string name="gen_code">Code</string>
     <string name="preview">Preview</string>
     <string name="send">Send</string>
-    <string name="greeting_hint">Put your greeting here. Use long press to start</string>
-    <string name="font_size">Font:</string>
-    <string name="melody">Melody:</string>
 
     <!--messages-->
     <string name="forgot_greeting">You forgot to write a greeting…</string>

@@ -56,11 +56,16 @@
         android:background="@drawable/rounded_background"
         android:gravity="center"
         android:imeOptions="actionDone"
-        android:inputType="textVisiblePassword"
+        android:digits="qwertyuiopasdfghjklzxcvbnm1234567890"
+        android:singleLine="true"
+        android:inputType="textNoSuggestions"
         android:maxLength="10"
         android:padding="@dimen/large_separation"
-        android:textSize="@dimen/normal_text"
+        android:textSize="@dimen/large_text"
         android:textColor="@color/colorPostalRed"/>
+
+
+    <!--android:inputType="textVisiblePassword"-->
 
     <com.blogspot.smallshipsinvest.coolcard.helpers.MyButtonWhite
         android:layout_width="wrap_content"
