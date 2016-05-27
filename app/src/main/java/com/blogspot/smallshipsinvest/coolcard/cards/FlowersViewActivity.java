@@ -52,7 +52,7 @@ public class FlowersViewActivity extends AppCompatActivity {
         double screenRatio = 1d * dm.heightPixels / dm.widthPixels;
 
         RelativeLayout screen = (RelativeLayout) findViewById(R.id.screen);
-        Studio.animateBackground(screen, R.color.colorBlack, R.color.colorLeafGreen, BACKGROUND_DURATION);
+        Studio.animateBackground(screen, R.color.black, R.color.cardLeafGreen, BACKGROUND_DURATION);
 
 
 //        garden
@@ -72,7 +72,7 @@ public class FlowersViewActivity extends AppCompatActivity {
         greeting.setDuration(GREETING_INFLATING_TIME);
         greeting.setTextSize(Data.card.fontSize());
         greeting.setInflator(GREETING_INFLATOR);
-        greeting.setTextColor(R.color.colorWhite, 0f);
+        greeting.setTextColor(R.color.white, 0f);
         greeting.setText(Data.card.greeting);
         greeting.setFont(Studio.Script.ROBOTO_BOLD_ITALIC_FONT);
         greeting.setLineSpacing(TEXT_SPACING_MULTIPLIER);

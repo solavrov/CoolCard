@@ -4,4 +4,4 @@
           android:layout_height="wrap_content"
           android:textSize="@dimen/small_text"
           android:gravity="right"
-          android:textColor="@color/colorWhite"/>
+          android:textColor="@color/white"/>

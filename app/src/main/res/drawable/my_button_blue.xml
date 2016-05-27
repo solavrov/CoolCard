@@ -3,7 +3,7 @@
 
     <item android:state_pressed="false">
         <shape>
-            <solid android:color="@color/white"/>
+            <solid android:color="@color/blue"/>
             <corners android:radius="@dimen/my_button_corner_radius"/>
             <padding android:left="@dimen/my_button_left_padding"
                      android:right="@dimen/my_button_left_padding"/>

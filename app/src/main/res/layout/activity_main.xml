@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.blogspot.smallshipsinvest.coolcard.MainActivity"
-    android:background="@color/colorPostalBlue">
+    android:background="@color/blue">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:gravity="center"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/white"
             android:textSize="@dimen/small_text"
             android:textStyle="italic"/>
 
@@ -46,14 +46,14 @@
         android:layout_gravity="center"
         android:text="@string/enter_code"
         android:textSize="@dimen/small_text"
-        android:textColor="@color/colorWhite"/>
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/code"
         android:layout_width="@dimen/code_view_length"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/rounded_background"
+        android:background="@drawable/stroke_background"
         android:gravity="center"
         android:imeOptions="actionDone"
         android:digits="qwertyuiopasdfghjklzxcvbnm1234567890"
@@ -62,7 +62,7 @@
         android:maxLength="10"
         android:padding="@dimen/large_separation"
         android:textSize="@dimen/large_text"
-        android:textColor="@color/colorPostalRed"/>
+        android:textColor="@color/red"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -72,7 +72,8 @@
         android:text="@string/view"
         android:textSize="@dimen/normal_text"
         android:layout_margin="@dimen/large_separation"
-        android:background="@drawable/my_button_white"/>
+        android:background="@drawable/my_button_white"
+        android:textColor="@color/blue"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -91,7 +92,8 @@
             android:text="@string/create"
             android:textSize="@dimen/normal_text"
             android:layout_margin="@dimen/large_separation"
-            android:background="@drawable/my_button_white"/>
+            android:background="@drawable/my_button_white"
+            android:textColor="@color/blue"/>
 
         <TextView
             android:layout_width="0dp"
@@ -103,8 +105,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:textSize="@dimen/small_text"
-            android:textColor="@color/colorWhite"/>
+            android:textSize="@dimen/normal_text"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

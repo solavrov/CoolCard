@@ -8,6 +8,6 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    android:background="@color/colorBlack">
+    android:background="@color/black">
 
 </RelativeLayout>

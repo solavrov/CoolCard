@@ -84,7 +84,7 @@ public class SailViewActivity extends AppCompatActivity {
             shipDivider = SHIP_DIVIDER_FOR_LOW_SCREEN_RATIO;
         }
 
-        Studio.animateBackground(screen, R.color.colorBlack, R.color.colorSky, BACKGROUND_DURATION);
+        Studio.animateBackground(screen, R.color.black, R.color.cardSky, BACKGROUND_DURATION);
 
         Studio.Actor sun = new Studio.Actor(screen, SUN_START_POINT);
         sun.setSize(SUN_RELATIVE_SIZE / sunDivider);
@@ -96,7 +96,7 @@ public class SailViewActivity extends AppCompatActivity {
         sun.fly();
 
         Studio.Script greeting = new Studio.Script(screen, 0f, (float) (1 - 1 / (screenRatio * sunDivider)));
-        greeting.setTextColor(R.color.colorDarkWater, 0f);
+        greeting.setTextColor(R.color.cardDarkWater, 0f);
         greeting.setText(Data.card.greeting);
         greeting.setTextSize(Data.card.fontSize() / sunDivider);
         greeting.setDuration(GREETING_DURATION);

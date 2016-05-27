@@ -103,7 +103,7 @@ public class SpaceViewActivity extends AppCompatActivity {
 
         greeting = new Studio.Script(screen);
         greeting.setTextSize(Data.card.fontSize());
-        greeting.setTextColor(R.color.colorLightBlue, 0f);
+        greeting.setTextColor(R.color.cardLightBlue, 0f);
         greeting.setText(Data.card.greeting);
         greeting.setInflator(TEXT_INFLATOR);
         greeting.setDuration(TEXT_DURATION);

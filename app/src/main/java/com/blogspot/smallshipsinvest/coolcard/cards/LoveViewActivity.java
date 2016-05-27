@@ -79,7 +79,7 @@ public class LoveViewActivity extends AppCompatActivity {
         greeting.setDuration(HEART_INFLATING_TIME);
         greeting.setTextSize(Data.card.fontSize());
         greeting.setInflator(1 / HEART_RELATIVE_SIZE);
-        greeting.setTextColor(R.color.colorRed, 0f);
+        greeting.setTextColor(R.color.cardRed, 0f);
         greeting.setText(Data.card.greeting);
         greeting.setFont(Studio.Script.ROBOTO_BOLD_ITALIC_FONT);
         greeting.setLineSpacing(TEXT_SPACING_MULTIPLIER);

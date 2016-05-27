@@ -14,8 +14,12 @@
     <dimen name="listview_image_size">80dp</dimen>
 
     <dimen name="icon_size">52dp</dimen>
-    <dimen name="code_view_length">262dp</dimen>
+    <dimen name="code_view_length">240dp</dimen>
 
     <dimen name="background_radius">11dp</dimen>
+    <dimen name="background_shadow_shift">2dp</dimen>
+
+    <dimen name="my_button_left_padding">11dp</dimen>
+    <dimen name="my_button_corner_radius">6dp</dimen>
 
 </resources>
