@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/large_separation"
-        android:background="@drawable/shadow_background"
+        android:background="@drawable/stroke_background"
         android:orientation="horizontal"
         android:padding="@dimen/large_separation">
 
@@ -111,7 +111,7 @@
             android:id="@+id/greetingView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shadow_background"
+            android:background="@drawable/stroke_background"
             android:gravity="top"
             android:hint="@string/greeting_hint"
             android:textColorHint="@color/blue"

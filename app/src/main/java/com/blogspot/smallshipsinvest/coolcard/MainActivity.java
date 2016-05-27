@@ -70,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (Data.cardCreate.code.equals("")) {
-//            Data.cardCreate.code = CodeHelper.generateCode(new CodeHelper.Alphabet(), CodeHelper.CODE_PATTERN);
-            Data.cardCreate.code = "wwwwww9999";
+            Data.cardCreate.code = CodeHelper.generateCode(new CodeHelper.Alphabet(), CodeHelper.CODE_PATTERN);
         }
 
 //        Data.cardCreate.code = "card1";

@@ -17,9 +17,8 @@
     <dimen name="code_view_length">210dp</dimen>
 
     <dimen name="background_radius">10dp</dimen>
-
-
     <dimen name="background_shadow_shift">2dp</dimen>
+
     <dimen name="my_button_left_padding">10dp</dimen>
     <dimen name="my_button_corner_radius">5dp</dimen>
 
