@@ -4,7 +4,7 @@
 
     <!--interface-->
     <string name="enter_code">Enter a code:</string>
-    <string name="greeting_hint">Put your greeting here. Use long press to start</string>
+    <string name="greeting_hint">Write your greeting here. Use long press to start</string>
     <string name="font_size">Font:</string>
     <string name="melody">Melody:</string>
 

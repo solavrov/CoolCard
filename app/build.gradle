@@ -8,8 +8,8 @@ android {
         applicationId "com.blogspot.smallshipsinvest.coolcard"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 305
-        versionName "3.5"
+        versionCode 401
+        versionName "4.1"
     }
     buildTypes {
         release {

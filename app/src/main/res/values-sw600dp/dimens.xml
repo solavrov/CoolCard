@@ -13,7 +13,7 @@
 
     <dimen name="listview_image_size">93dp</dimen>
 
-    <dimen name="icon_size">60dp</dimen>
+    <dimen name="icon_size">68dp</dimen>
     <dimen name="code_view_length">279dp</dimen>
 
     <dimen name="background_radius">13dp</dimen>

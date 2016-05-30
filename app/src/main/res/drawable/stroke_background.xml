@@ -7,6 +7,6 @@
         android:bottomRightRadius="@dimen/background_radius"
         android:topLeftRadius="@dimen/background_radius"
         android:topRightRadius="@dimen/background_radius"/>
-    <stroke android:color="@color/blueLight"
+    <stroke android:color="@color/blue2"
             android:width="0dp"/>
 </shape>

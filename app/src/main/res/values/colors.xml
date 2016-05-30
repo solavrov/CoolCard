@@ -5,7 +5,8 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="blue">#0084cc</color>
-    <color name="blueLight">#a3deff</color>
+    <color name="blue2">#a3deff</color>
+    <color name="blue3">#11abff</color>
     <color name="red">#ff535e</color>
 
     <!--cards-->
