@@ -1,9 +1,11 @@
 package com.blogspot.smallshipsinvest.coolcard;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setAnimatorScale(this);
         setVersion();
         TextView versionView = (TextView) findViewById(R.id.version);
         assert versionView != null;
@@ -89,6 +92,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         readyToView = false;
+    }
+
+    private void setAnimatorScale(Context context) {
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) {
+
+            float scale = Settings.Global.getFloat(context.getContentResolver(), Settings.Global
+                    .ANIMATOR_DURATION_SCALE, 0);
+
+            if (scale != 1) {
+                try {
+                    ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 1f);
+                } catch (Throwable t) {
+                    //Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
+                }
+            }
+
+        }
+
     }
 
     private void setVersion() {
