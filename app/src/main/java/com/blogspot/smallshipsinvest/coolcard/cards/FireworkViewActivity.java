@@ -77,6 +77,7 @@ public class FireworkViewActivity extends AppCompatActivity {
         greeting.setDuration(TEXT_DURATION);
         greeting.setFont(Studio.Script.ROBOTO_BOLD_ITALIC_FONT);
         greeting.setLineSpacing(TEXT_SPACING_MULTIPLIER);
+        greeting.squeeze();
 
         r = new Runnable() {
             @Override
@@ -84,7 +85,7 @@ public class FireworkViewActivity extends AppCompatActivity {
                 for (Studio.Firework fw : firework) {
                     fw.start();
                 }
-                greeting.inflate();
+                greeting.reinflate();
                 mp.start();
             }
         };

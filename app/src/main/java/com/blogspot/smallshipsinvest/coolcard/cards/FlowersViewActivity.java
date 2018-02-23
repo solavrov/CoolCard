@@ -76,13 +76,14 @@ public class FlowersViewActivity extends AppCompatActivity {
         greeting.setText(Data.card.greeting);
         greeting.setFont(Studio.Script.ROBOTO_BOLD_ITALIC_FONT);
         greeting.setLineSpacing(TEXT_SPACING_MULTIPLIER);
+        greeting.squeeze();
 
 
         r = new Runnable() {
             @Override
             public void run() {
                 garden.inflate();
-                greeting.inflate();
+                greeting.reinflate();
                 mp.start();
             }
         };

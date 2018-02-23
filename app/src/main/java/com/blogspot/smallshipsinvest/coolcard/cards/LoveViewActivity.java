@@ -14,6 +14,8 @@ import com.blogspot.smallshipsinvest.coolcard.R;
 import com.blogspot.smallshipsinvest.coolcard.helpers.Studio;
 import com.blogspot.smallshipsinvest.coolcard.helpers.XY;
 
+import static java.lang.Boolean.TRUE;
+
 public class LoveViewActivity extends AppCompatActivity {
 
     private static final float FLOWER_RELATIVE_SIZE = 0.05f;
@@ -28,11 +30,13 @@ public class LoveViewActivity extends AppCompatActivity {
 
     private static final float TEXT_SPACING_MULTIPLIER = 1f;
 
-    private static final long START_DELAY = 1_000;
+    private static final long START_DELAY_MUSIC = 1_000;
+    private static final long START_DELAY_MOTION = 1_500;
 
     private MediaPlayer mp;
     private Handler h;
-    private Runnable r;
+    private Runnable r1;
+    private Runnable r2;
     private Studio.Sky garden;
     private Studio.Actor heart;
     private Studio.Script greeting;
@@ -80,23 +84,31 @@ public class LoveViewActivity extends AppCompatActivity {
         greeting.setTextSize(Data.card.fontSize());
         greeting.setInflator(1 / HEART_RELATIVE_SIZE);
         greeting.setTextColor(R.color.cardRed, 0f);
-        greeting.setText(Data.card.greeting);
         greeting.setFont(Studio.Script.ROBOTO_BOLD_ITALIC_FONT);
         greeting.setLineSpacing(TEXT_SPACING_MULTIPLIER);
+        greeting.setText(Data.card.greeting);
+        greeting.setShown(TRUE);
+        greeting.squeeze();
 
-
-        r = new Runnable() {
+        r1 = new Runnable() {
             @Override
             public void run() {
                 garden.inflate();
                 heart.inflate();
-                greeting.inflate();
+                greeting.reinflate();
+            }
+        };
+
+        r2 = new Runnable() {
+            @Override
+            public void run() {
                 mp.start();
             }
         };
 
         h = new Handler();
-        h.postDelayed(r, START_DELAY);
+        h.postDelayed(r1, START_DELAY_MOTION);
+        h.postDelayed(r2, START_DELAY_MUSIC);
 
     }
 
@@ -104,7 +116,8 @@ public class LoveViewActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         mp.release();
-        h.removeCallbacks(r);
+        h.removeCallbacks(r1);
+        h.removeCallbacks(r2);
         finish();
     }
 
@@ -112,7 +125,8 @@ public class LoveViewActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         mp.release();
-        h.removeCallbacks(r);
+        h.removeCallbacks(r1);
+        h.removeCallbacks(r2);
     }
 
 }

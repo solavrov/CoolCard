@@ -19,6 +19,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import static java.lang.Boolean.FALSE;
+
 public class Studio {
 
     public static class Firework extends Scene {
@@ -427,6 +429,7 @@ public class Studio {
             moveY.setDuration(duration);
 
             moveX.setStartDelay(delay);
+            moveY.setStartDelay(delay);
 
             AnimatorSet set = new AnimatorSet();
 
@@ -450,20 +453,19 @@ public class Studio {
             inflateX.setDuration(duration);
             inflateY.setDuration(duration);
 
-            inflateX.setStartDelay(delay);
-
             deflateX.setDuration(duration);
             deflateY.setDuration(duration);
 
             AnimatorSet lightSet = new AnimatorSet();
-            lightSet.play(inflateX).with(inflateY);
+            lightSet.playTogether(inflateX,inflateY);
+            lightSet.setStartDelay(delay);
 
             AnimatorSet dimSet = new AnimatorSet();
-            dimSet.play(deflateX).with(deflateY);
+            dimSet.playTogether(deflateX,deflateY);
 
             AnimatorSet set = new AnimatorSet();
 
-            set.play(lightSet).before(dimSet);
+            set.playSequentially(lightSet,dimSet);
 
             set.start();
 
@@ -559,10 +561,9 @@ public class Studio {
             inflateX.setDuration(duration);
             inflateY.setDuration(duration);
 
-            inflateX.setStartDelay(delay);
-
             AnimatorSet set = new AnimatorSet();
-            set.play(inflateX).with(inflateY);
+            set.playTogether(inflateX,inflateY);
+            set.setStartDelay(delay);
 
             set.setInterpolator(new LinearInterpolator());
             set.start();
@@ -645,7 +646,7 @@ public class Studio {
         public static final String ITALIC_FONT = "italic";
         public static final String BOLD_ITALIC_FONT = "bold_italic";
 
-        //        public static final String ROBOTO_REGULAR_FONT = "Roboto-Regular.ttf";
+//        public static final String ROBOTO_REGULAR_FONT = "Roboto-Regular.ttf";
 //        public static final String ROBOTO_BOLD_FONT = "Roboto-Bold.ttf";
 //        public static final String ROBOTO_ITALIC_FONT = "Roboto-Italic.ttf";
         public static final String ROBOTO_BOLD_ITALIC_FONT = "Roboto-BoldItalic.ttf";
@@ -655,6 +656,7 @@ public class Studio {
         private float inflator = 1f;
         private long duration = 1_000;
         private long delay = 0;
+        private boolean shown = FALSE; // initially shown
         public TextView view;
 
         public Script(RelativeLayout screen) {
@@ -688,6 +690,10 @@ public class Studio {
 
         public void setDelay(long delay) {
             this.delay = delay;
+        }
+
+        public void setShown(boolean shown) {
+            this.shown = shown;
         }
 
         public void setFont(String font) {
@@ -745,22 +751,51 @@ public class Studio {
             this.duration = duration;
         }
 
-        public void inflate() {
+        public void squeeze() {
 
-            Runnable r = new Runnable() {
-                @Override
-                public void run() {
-                    view.setTextColor(view.getTextColors().withAlpha(255));
-                }
-            };
+            if (shown) {
 
-            Handler h = new Handler();
-            h.postDelayed(r, delay);
+                Runnable r = new Runnable() {
+                    @Override
+                    public void run() {
+                        view.setTextColor(view.getTextColors().withAlpha(255));
+                    }
+                };
+
+                Handler h = new Handler();
+                h.postDelayed(r, 1);
+
+            }
 
             ObjectAnimator deflateX = ObjectAnimator.ofFloat(view, "scaleX", 1 / inflator);
             ObjectAnimator deflateY = ObjectAnimator.ofFloat(view, "scaleY", 1 / inflator);
             deflateX.setDuration(0);
             deflateY.setDuration(0);
+
+            AnimatorSet set = new AnimatorSet();
+            set.playTogether(deflateX,deflateY);
+
+            set.setInterpolator(new LinearInterpolator());
+
+            set.start();
+
+        }
+
+        public void reinflate() {
+
+            if (!shown) {
+
+                Runnable r = new Runnable() {
+                    @Override
+                    public void run() {
+                        view.setTextColor(view.getTextColors().withAlpha(255));
+                    }
+                };
+
+                Handler h = new Handler();
+                h.postDelayed(r, delay);
+
+            }
 
             ObjectAnimator inflateX = ObjectAnimator.ofFloat(view, "scaleX", 1);
             ObjectAnimator inflateY = ObjectAnimator.ofFloat(view, "scaleY", 1);
@@ -768,16 +803,9 @@ public class Studio {
             inflateX.setDuration(duration);
             inflateY.setDuration(duration);
 
-            inflateX.setStartDelay(delay);
-
-            AnimatorSet set1 = new AnimatorSet();
-            set1.play(deflateX).with(deflateY);
-
-            AnimatorSet set2 = new AnimatorSet();
-            set2.play(inflateX).with(inflateY);
-
             AnimatorSet set = new AnimatorSet();
-            set.playSequentially(set1, set2);
+            set.playTogether(inflateX,inflateY);
+            set.setStartDelay(delay);
 
             set.setInterpolator(new LinearInterpolator());
 

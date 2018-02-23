@@ -56,6 +56,7 @@ public class SailViewActivity extends AppCompatActivity {
     private MediaPlayer mp;
     private Handler h;
     private Runnable r;
+    private Studio.Script greeting;
     private Studio.Actor ship;
     private Studio.Actor wave;
     private Studio.Actor wave2;
@@ -95,7 +96,7 @@ public class SailViewActivity extends AppCompatActivity {
         sun.setTarget(sunTarget);
         sun.fly();
 
-        Studio.Script greeting = new Studio.Script(screen, 0f, (float) (1 - 1 / (screenRatio * sunDivider)));
+        greeting = new Studio.Script(screen, 0f, (float) (1 - 1 / (screenRatio * sunDivider)));
         greeting.setTextColor(R.color.cardDarkWater, 0f);
         greeting.setText(Data.card.greeting);
         greeting.setTextSize(Data.card.fontSize() / sunDivider);
@@ -103,7 +104,8 @@ public class SailViewActivity extends AppCompatActivity {
         greeting.setInflator(GREETING_INFLATOR);
         greeting.setFont(Studio.Script.ROBOTO_BOLD_ITALIC_FONT);
         greeting.setDelay(GREETING_DELAY);
-        greeting.inflate();
+        greeting.squeeze();
+        greeting.reinflate();
 
         ship = new Studio.Actor(screen, SHIP_POSITION_POINT);
         ship.setSize(SHIP_RELATIVE_SIZE / shipDivider, 2 * SHIP_RELATIVE_SIZE / shipDivider);
